@@ -14,10 +14,6 @@ const risultatoElement = document.getElementById('risultato');
 // 2. scelte utente
 function ottieniNumeroUtente() {
   const numeroUtente = parseInt(document.getElementById('numero').value);
-  if (numeroUtente < 1 || numeroUtente > 5 || isNaN(numeroUtente)) {
-    alert('Inserisci un numero valido da 1 a 5!');
-    return null;
-  }
   return numeroUtente;
 }
 
@@ -33,17 +29,18 @@ function generaNumeroCasuale() {
 // 4. Sommiamo i due numeri.
 function calcolaRisultato() {
   const numeroUtente = ottieniNumeroUtente();
-  if (!numeroUtente) return;
 
   const sceltaUtente = ottieniSceltaUtente();
   const numeroComputer = generaNumeroCasuale();
   const somma = numeroUtente + numeroComputer;
+
   // 5. Stabiliamo se la somma è pari o dispari.
   const risultato = somma % 2 === 0 ? 'pari' : 'dispari';
   const esito = (risultato === sceltaUtente) ? 'Hai vinto!' : 'Mi dispiace, hai perso!';
 
   risultatoElement.textContent = `${esito} La somma (${numeroUtente} + ${numeroComputer}) è ${risultato}.`;
 }
+
 // 6. Diciamo chi ha vinto.
 gameForm.addEventListener('submit', function(event) {
   event.preventDefault();
