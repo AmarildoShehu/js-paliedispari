@@ -1,10 +1,11 @@
-// 1. collego html e js
+
+/*
 console.log('JS OK');
 // ### Palidroma ####
 // 2. Chiedere all’utente di inserire una parola
 // 3. Creare una funzione per capire se la parola inserita è palindroma
 // 4. Stampiamo il risultato in console
-/*
+
 // 2. Chiedere all’utente di inserire una parola
 const parolaUtente = prompt('Inserisci una parola:', 'Amarildo');
 console.log(parolaUtente);
@@ -21,6 +22,9 @@ function verificaPalindromo(parola) {
 const risultato = verificaPalindromo(parolaUtente);
 console.log(risultato);
 */
+
+
+
 
 // || Elementi in pagina
 
