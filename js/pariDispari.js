@@ -10,4 +10,7 @@ const sceltaElement = document.getElementById('scelta');
 const numeroElement = document.getElementById('numero');
 const risultatoElement = document.getElementById('risultato');
 
-// 2. Generiamo un numero casuale per il computer.
+// 2. Generiamo una funzione per generare numeri random da 1 a 5;
+function generaNumeroCasuale() {
+  return Math.floor(Math.random() * 5) + 1;
+}
